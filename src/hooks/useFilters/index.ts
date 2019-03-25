@@ -17,7 +17,7 @@ export default function useFilters(defaultFilters: FilterCollection = {}) {
   };
 
   const filtersArray = Object.values(filters);
-  const applyFilters = (items): any[] => {
+  const applyFilters = (items): [] => {
     return filtersArray.reduce(
       (accumulator, filterFn) => accumulator.filter(filterFn),
       items
