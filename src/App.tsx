@@ -9,7 +9,7 @@ export default function App() {
   return (
     <Centered>
       <Split>
-        <Panel>
+        <Panel className="u-flexV u-centerBoth">
           <Greeting />
         </Panel>
         <Panel>
@@ -40,6 +40,6 @@ const Panel = styled.div`
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 8px 19px hsla(0, 0%, 0%, 0.06);
-  max-height: 600px;
+  height: 500px;
   overflow: auto;
 `;
